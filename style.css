@@ -1,0 +1,142 @@
+   .text{
+    width: 100%;
+    height: auto;
+    text-align: center;
+   }
+   .text h1{
+    color: blueviolet;
+    text-shadow: 0px 0px 20px blue;
+   }
+  .aza, .aza-l, .aza-r{
+    background-image: url(a2031288.svg);
+    width: 132px;
+    height: 70px;
+    background-size: 152px,30px;
+    animation: flash 2s infinite;
+    float: right;
+  }
+@keyframes flash {
+    0%{
+opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.bot{
+    margin-top: 200px;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    position: relative;
+}
+.bot img{
+width: 100%;
+border-radius: 50%;
+animation: bord 2s infinite;
+box-shadow: 0 0 20px whitesmoke;
+}
+.bot img:hover{
+    animation-play-state: paused;
+}
+.bot .borderU {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.borderU p{
+    color: aliceblue;
+    font-size: 30px;
+    animation: bord 2s infinite;
+}
+@keyframes bord{
+    0%{ 
+        transform: rotate(0);
+      color: rgb(243, 5, 5);
+    }
+    5%{
+    }
+    10%{
+        color: blueviolet;
+
+    }
+    15%{
+
+    }
+    20%{
+        color: brown;
+    }
+    25%{
+
+    }
+    30%{
+        opacity: 1;
+        color: rgb(93, 245, 6);
+    }
+    40%{
+        color: rgb(119, 8, 247);
+    }
+    50%{
+        color: rgb(196, 240, 3);
+    }
+    60%{
+        color: rgb(247, 163, 8);
+    }
+    70%{
+        color: rgb(245, 11, 11);
+    }
+    80%{
+        color: rgb(253, 251, 251);
+    }
+    90%{
+        color: brown;
+    }
+    100% {
+      color: red;
+      transform: rotate(360deg);
+    }
+}
+
+
+.bot .heart{
+        position: relative;
+        width: 100px;
+        height: 90px;
+        transform: rotate(-45deg);
+        background: red;
+    }
+    .heart::before,
+    .heart::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 100px 100px 0 0;
+    }
+    .heart::before {
+        left: 50px;
+        border-radius: 100px 100px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 0;
+    }
+    .heart::after {
+        left: 0;
+        border-radius: 100px 100px 1000px 100px 100px;
+        transform: rotate(45deg);
+        transform-origin: 100% 0;
+    }
